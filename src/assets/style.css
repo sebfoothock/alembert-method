@@ -56,13 +56,14 @@ button:hover {
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 800px) {
   Button {
-    margin: 2vh 2vw;
+    padding: 4vh 4vw;
     font-size: 0.8em;
     border: 0.5px solid black;
     border-radius: 15px;
     margin: 3vh 5vw;
+    padding: ;
   }
   * {
-    font-size: 1em;
+    font-size: 20px;
   }
 }
