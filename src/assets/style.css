@@ -12,7 +12,7 @@
   padding: 10px;
   box-sizing: border-box;
   width: 70vw;
-  height: 70vh;
+  height: 80vh;
   margin: auto;
   margin-top: 5vh;
 }
@@ -33,12 +33,26 @@ Button {
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
   display: inline-block;
   font-size: 1.5rem;
-  /* margin: 5vh 10vw; */
   border: 2px solid black;
 }
 
 button:hover {
   background-color: darkgray;
+}
+
+.mise {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+
+.plus,
+.moins {
+  padding: 1vh 1vw;
+}
+
+.miseMet {
+  margin-left: 0;
 }
 
 .gagne {
@@ -55,6 +69,9 @@ button:hover {
 }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 800px) {
+  * {
+    font-size: 20px;
+  }
   Button {
     padding: 4vh 4vw;
     font-size: 0.8em;
@@ -62,7 +79,10 @@ button:hover {
     border-radius: 15px;
     margin: 3vh 5vw;
   }
-  * {
-    font-size: 20px;
+
+  .mise {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
   }
 }

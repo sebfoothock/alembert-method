@@ -14,9 +14,9 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      argent: 500,
+      argent: 100,
       pasMise: 5,
-      miseMet: 40,
+      miseMet: 5,
       nbPerdu: 0,
       nbGagne: 0,
       benef: 0,
@@ -68,6 +68,18 @@ class App extends Component {
     });
   };
 
+  plus = () => {
+    this.setState({
+      miseMet: this.state.miseMet + this.state.pasMise,
+    });
+  };
+
+  moins = () => {
+    this.setState({
+      miseMet: this.state.miseMet - this.state.pasMise,
+    });
+  };
+
   render() {
     return (
       <Container className="cadre">
@@ -75,10 +87,16 @@ class App extends Component {
           <Col lg={9} md={10}>
             <div className="title">Méthode d'Alembert</div>
             <ListGroup className="info">
-              <ListGroupItem>
-                <h2>
+              <ListGroupItem className="mise">
+                <h2 className="miseMet">
                   mise à mettre : <label>{this.state.miseMet}</label>
                 </h2>
+                <Button className="plus" onClick={this.plus}>
+                  +
+                </Button>
+                <Button className="moins" onClick={this.moins}>
+                  -
+                </Button>
               </ListGroupItem>
               <ListGroupItem>
                 <h2>
