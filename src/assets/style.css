@@ -43,12 +43,12 @@ button:hover {
 .mise {
   display: flex;
   justify-content: space-between;
-  width: 30vw;
+  width: 40vw;
 }
 
 .plus,
 .moins {
-  padding: 1vh 1vw;
+  padding: 1.5vh 1.5vw;
 }
 
 .miseMet {
@@ -87,11 +87,12 @@ button:hover {
   .mise {
     display: flex;
     justify-content: none;
-    margin: auto;
     margin-left: 0;
+    width: unset;
   }
   .plus,
   .moins {
     padding: 2vh 4vw;
+    margin: 0 1vw;
   }
 }
