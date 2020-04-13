@@ -1,14 +1,6 @@
 import React, { Component } from "react";
 import "./assets/style.css";
-import {
-  Button,
-  FormGroup,
-  ListGroup,
-  ListGroupItem,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+import { Button, FormGroup, Container, Row, Col } from "reactstrap";
 
 class App extends Component {
   constructor(props) {
@@ -86,8 +78,8 @@ class App extends Component {
         <Row className="justify-content-md-center">
           <Col lg={9} md={10}>
             <div className="title">Méthode d'Alembert</div>
-            <ListGroup className="info">
-              <ListGroupItem className="mise">
+            <div className="info">
+              <div className="mise">
                 <h2 className="miseMet">
                   mise à mettre : <label>{this.state.miseMet}</label>
                 </h2>
@@ -97,27 +89,27 @@ class App extends Component {
                 <Button className="moins" onClick={this.moins}>
                   -
                 </Button>
-              </ListGroupItem>
-              <ListGroupItem>
+              </div>
+              <div>
                 <h2>
                   argent restant : <label>{this.state.argent}</label>
                 </h2>
-              </ListGroupItem>
-              <ListGroupItem>
+              </div>
+              <div>
                 <h2>
                   bénéfice : <label>{this.state.benef}</label>
                 </h2>
-              </ListGroupItem>
-              <ListGroupItem className="perdu">
+              </div>
+              <div className="perdu">
                 perdu : <label>{this.state.nbPerdu}</label>
-              </ListGroupItem>
-              <ListGroupItem className="gagne">
+              </div>
+              <div className="gagne">
                 gagné : <label>{this.state.nbGagne}</label>
-              </ListGroupItem>
-              <ListGroupItem>
+              </div>
+              <div>
                 argent misé : <label>{this.state.argMise}</label>
-              </ListGroupItem>
-            </ListGroup>
+              </div>
+            </div>
             <FormGroup className="btn">
               <Button onClick={this.win} className="gagne">
                 Gagné

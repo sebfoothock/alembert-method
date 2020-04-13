@@ -68,9 +68,13 @@ button:hover {
   justify-content: space-evenly;
 }
 
+.info {
+  margin: 10px;
+}
+
 @media only screen and (min-device-width: 300px) and (max-device-width: 800px) {
   * {
-    font-size: 20px;
+    font-size: 15px;
   }
   Button {
     padding: 4vh 4vw;
@@ -82,7 +86,12 @@ button:hover {
 
   .mise {
     display: flex;
-    justify-content: space-between;
-    width: 70vw;
+    justify-content: none;
+    margin: auto;
+    margin-left: 0;
+  }
+  .plus,
+  .moins {
+    padding: 2vh 4vw;
   }
 }
