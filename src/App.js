@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      argent: 100,
+      argent: 150,
       pasMise: 5,
       miseMet: 5,
       nbPerdu: 0,
@@ -96,7 +96,7 @@ class App extends Component {
                 </h2>
               </div>
               <div>
-                <h2>
+                <h2 className="miseMet">
                   bénéfice : <label>{this.state.benef}</label>
                 </h2>
               </div>
