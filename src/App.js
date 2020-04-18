@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./assets/style.css";
-import { Button, FormGroup, Container, Row, Col } from "reactstrap";
+import { Button, FormGroup, Container, Row, Col, Input } from "reactstrap";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      argent: 150,
-      pasMise: 5,
-      miseMet: 5,
+      argent: 50,
+      pasMise: 2,
+      miseMet: 2,
       nbPerdu: 0,
       nbGagne: 0,
       benef: 0,
@@ -110,6 +110,10 @@ class App extends Component {
                 argent misé : <label>{this.state.argMise}</label>
               </div>
             </div>
+            <FormGroup>
+              <label>Argent du compte : </label>
+              <Input type="textarea" name="text" id="argCompte" maxLength="7" />
+            </FormGroup>
             <FormGroup className="btn">
               <Button onClick={this.win} className="gagne">
                 Gagné

@@ -72,6 +72,14 @@ button:hover {
   margin: 10px;
 }
 
+#argCompte {
+  width: 7vw;
+  height: 3.5vh;
+  vertical-align: middle;
+  margin-bottom: 1vh;
+  resize: none;
+}
+
 @media only screen and (min-device-width: 300px) and (max-device-width: 800px) {
   * {
     font-size: 15px;
@@ -94,5 +102,9 @@ button:hover {
   .moins {
     padding: 2vh 4vw;
     margin: 0 1vw;
+  }
+
+  #argCompte {
+    width: 17vw;
   }
 }
